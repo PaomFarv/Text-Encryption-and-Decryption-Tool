@@ -1,6 +1,6 @@
 import random
 import string
-from colorama import Fore, Style, init
+from colorama import Fore
 
 chars = list(string.ascii_letters + string.punctuation + " " + string.digits)
 key = chars.copy()
@@ -54,5 +54,5 @@ while True:
         print(Fore.CYAN + "Decrypted text:", Fore.MAGENTA + decrypted)
 
     elif user_response == 3:
-        print(Fore.GREEN + "Exiting the program. Goodbye!")
+        print(Fore.GREEN + "\nExiting the program. Goodbye!\n")
         break
